@@ -1,5 +1,5 @@
 {
-	"name": "wxtiles-deckgl-exapmle",
+	"name": "wxtiles-deckgl-example",
 	"version": "1.0.0",
 	"description": "example of using \"wxtiles-deckgl\"",
 	"main": "src/index.ts",
@@ -8,7 +8,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/metoceanapi/wxtiles-deckgl-exapmle.git"
+		"url": "git+https://github.com/metoceanapi/wxtiles-deckgl-example.git"
 	},
 	"keywords": [
 		"wxtiles",
@@ -18,9 +18,9 @@
 	"author": "Sergei Melman",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/metoceanapi/wxtiles-deckgl-exapmle/issues"
+		"url": "https://github.com/metoceanapi/wxtiles-deckgl-example/issues"
 	},
-	"homepage": "https://github.com/metoceanapi/wxtiles-deckgl-exapmle#readme",
+	"homepage": "https://github.com/metoceanapi/wxtiles-deckgl-example#readme",
 	"devDependencies": {
 		"esbuild": "^0.12.19",
 		"express": "^4.17.1",
