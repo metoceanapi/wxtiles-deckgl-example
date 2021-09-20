@@ -1,0 +1,34 @@
+{
+	"name": "wxtiles-deckgl-exapmle",
+	"version": "1.0.0",
+	"description": "example of using \"wxtiles-deckgl\"",
+	"main": "src/index.ts",
+	"scripts": {
+		"start": "DISABLE_HOT_RELOAD=true node watch-public.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/metoceanapi/wxtiles-deckgl-exapmle.git"
+	},
+	"keywords": [
+		"wxtiles",
+		"deckgl",
+		"metocean"
+	],
+	"author": "Sergei Melman",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/metoceanapi/wxtiles-deckgl-exapmle/issues"
+	},
+	"homepage": "https://github.com/metoceanapi/wxtiles-deckgl-exapmle#readme",
+	"devDependencies": {
+		"esbuild": "^0.12.19",
+		"express": "^4.17.1",
+		"typescript": "^4.3.5"
+	},
+	"dependencies": {
+		"@danmarshall/deckgl-typings": "^4.9.5",
+		"deck.gl": "^8.5.8",
+		"@metoceanapi/wxtiles-gl": "1.0.3-1"
+	}
+}
