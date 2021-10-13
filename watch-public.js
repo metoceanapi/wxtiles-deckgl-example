@@ -1,27 +1,26 @@
 const esbuild = require('esbuild');
 const express = require('express');
 
-// let watchResponse;
-// const disableHotReload = process.env.DISABLE_HOT_RELOAD === 'true';
-
 esbuild
 	.build({
-		entryPoints: ['src/index.ts'],
+		entryPoints: ['src/dev-deckgl-index.ts'],
 		bundle: true,
 		plugins: [],
-		loader: {},
-		// target: 'es6',
+		loader: { '.woff': 'base64', '.fs': 'text', '.vs': 'text' },
 		format: 'iife',
-		outdir: 'public/wxtiles',
+		// https://www.stetic.com/market-share/browser/
+		target: ['es2020', 'chrome80', 'safari13', 'edge89', 'firefox70'],
+
+		outfile: 'public/wxtiles/wxtiles.js',
 		sourcemap: true,
-		// minify: false,
+		minify: false,
+
 		watch: {
 			onRebuild(error, result) {
 				if (error) {
 					console.error('watch build failed:', error);
 				} else {
 					console.log('rebuilded', new Date());
-					// !disableHotReload && watchResponse && watchResponse.write('data: refresh\n\n');
 				}
 			},
 		},
@@ -42,7 +41,7 @@ esbuild
 
 		const url = `http://localhost:${PORT}`;
 		app.listen(PORT, () => {
-			console.log(`Dev is running at ${url}`);
+			console.log(`See example: ${url}`);
 		});
 	})
 	.catch((e) => console.error(e.message));

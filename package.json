@@ -22,13 +22,18 @@
 	},
 	"homepage": "https://github.com/metoceanapi/wxtiles-deckgl-example#readme",
 	"devDependencies": {
-		"esbuild": "^0.12.19",
+		"changelogkeeper": "^1.2.0",
+		"esbuild": "^0.12.28",
+		"esbuild-plugin-external-global": "^1.0.1",
 		"express": "^4.17.1",
-		"typescript": "^4.3.5"
+		"typescript": "^4.4.3"
 	},
 	"dependencies": {
-		"@danmarshall/deckgl-typings": "^4.9.5",
-		"deck.gl": "^8.5.8",
-		"@metoceanapi/wxtiles-gl": "1.0.3-1"
+		"@danmarshall/deckgl-typings": "4.9.7",
+		"@luma.gl/core": "8.5.10",
+		"deck.gl": "8.6.0"
+	},
+	"peerDependencies": {
+		"@metoceanapi/wxtiles-deckgl": "file:../wxtiles-deckgl"
 	}
 }
