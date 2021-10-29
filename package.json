@@ -4,7 +4,8 @@
 	"description": "example of using \"wxtiles-deckgl\"",
 	"main": "src/index.ts",
 	"scripts": {
-		"start": "DISABLE_HOT_RELOAD=true node watch-public.js"
+		"start": "node watch-public.js",
+		"npm_reinstall": "rm -rf node_modules package-lock.json && npm i"
 	},
 	"repository": {
 		"type": "git",
@@ -24,11 +25,10 @@
 	"devDependencies": {
 		"changelogkeeper": "^1.2.0",
 		"esbuild": "^0.12.28",
-		"esbuild-plugin-external-global": "^1.0.1",
 		"express": "^4.17.1",
 		"typescript": "^4.4.3"
 	},
 	"dependencies": {
-		"@metoceanapi/wxtiles-deckgl": "^2.0.3"
+		"@metoceanapi/wxtiles-deckgl": "^2.0.7"
 	}
 }
